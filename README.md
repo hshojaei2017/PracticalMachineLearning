@@ -1,1 +1,3 @@
-# PracticalMachineLearning
+The main goal of this project is to fit different models to data from accelerometers used on 6 participants, and predict the manner in which they did the exercise. We will use k-fold cross-validation to optimize tuning parameters for each model. To estimate the expected out-of-sample accuracy for each model, we divide the training data into two subsets (training1 & training2), train the model (including cross validation) using training1 data set, and then test the skill of the model using training2 data set. At the end, the best performing model will be used to perform prediction for 20 different test cases.
+
+Out of the 4 different models used (decision tree, generalized boosted regression, random forest, support vector machine) the random forest model gave the highest out-of-sample accuracy followed very closely by generalized boosted regression. Therefore the random forest model was used to perform the classification on the test set.
